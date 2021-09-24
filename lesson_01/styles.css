@@ -4,7 +4,7 @@ h3{
 button{
     width: 100px;
 }
-.result{
+.result, .equal_result, .calc_result{
     margin: 15px 0 15px 0;
     width: 500px;
     height: 200px;

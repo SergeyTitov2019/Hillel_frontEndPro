@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <title>Hillel</title>
     <link rel="stylesheet" href="./styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 <body>
 <div class="container">
-
     <h3>Task 1</h3>
-    <form onsubmit="onSubmit()">
+    <form>
         <div class="mb-3">
             <label for="number1" class="form-label">Enter First Number</label>
             <input type="number" class="form-control input1" id="number1" value="">
@@ -20,13 +20,82 @@
             <input type="number" class="form-control" id="number2" value="">
         </div>
 
-        <button type="submit" class="btn btn-outline-primary" onclick="onSum()">Sum</button>
+        <button type="button" class="btn btn-outline-primary" onclick="onSum()">Sum</button>
         <button type="button" class="btn btn-outline-primary" onclick="onSubtract()">Subtract</button>
         <button type="button" class="btn btn-outline-primary" onclick="onDivide()">Divide</button>
     </form>
-    <div class="result">
+    <div class="result"></div>
+    <hr>
 
-    </div>
+    <h3>Task 2</h3>
+    <form>
+        <div class="mb-3">
+            <label for="val-task2-1" class="form-label">Enter First Number</label>
+            <input type="text" class="form-control input1" id="val-task2-1" value="">
+        </div>
+        <div class="mb-3">
+            <label for="val-task2-2" class="form-label">Enter Second Number</label>
+            <input type="text" class="form-control" id="val-task2-2" value="">
+        </div>
+
+        <button type="button" class="btn btn-outline-primary" onclick="onCheckEqual()">Check</button>
+    </form>
+    <div class="equal_result"></div>
+    <hr>
+
+    <h3>Task 3</h3>
+    <form>
+        <div class="mb-3">
+            <label for="val-task3-1" class="form-label">Enter First Number</label>
+            <input type="number" class="form-control input1" id="val-task3-1" value="">
+        </div>
+        <div class="mb-3">
+            <label for="val-task3-2" class="form-label">Enter Second Number</label>
+            <input type="number" class="form-control" id="val-task3-2" value="">
+        </div>
+        <div class="mb-3">
+            <label for="val-task3-2" class="form-label">Enter Third Number</label>
+            <input type="number" class="form-control" id="val-task3-3" value="">
+        </div>
+
+        <button type="button" class="btn btn-outline-primary" onclick="onAverageCalc()">Calculate</button>
+    </form>
+    <div class="calc_result"></div>
+    <hr>
+
+    <h3>Task 4</h3>
+    <form>
+        <div class="mb-3">
+            <label for="val-task3-1" class="form-label">Type First String</label>
+            <input type="text" class="form-control input1" id="val-task4-1" value="">
+        </div>
+        <div class="mb-3">
+            <label for="val-task3-2" class="form-label">Type Second String</label>
+            <input type="text" class="form-control" id="val-task4-2" value="">
+        </div>
+        <div class="mb-3">
+            <label for="val-task3-2" class="form-label">Type Third String</label>
+            <input type="text" class="form-control" id="val-task4-3" value="">
+        </div>
+
+        <button type="button" class="btn btn-outline-primary" onclick="onStick()">Stick them</button>
+    </form>
+    <div class="calc_result" id="res-task-4"></div>
+    <hr>
+
+    <h3>Task 5</h3>
+    <form>
+        <div class="mb-3">
+            <label for="val-task3-1" class="form-label">Enter Five-Digit Number</label>
+            <input type="number" class="form-control input1" id="val-task5-1" value="">
+        </div>
+
+        <button type="button" class="btn btn-outline-primary" onclick="onTransform()">Transform</button>
+    </form>
+    <div class="calc_result" id="res-task-5"></div>
+    <hr>
+
+
 </div>
 
 <script src="index.js"></script>
