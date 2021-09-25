@@ -1,33 +1,27 @@
-
-const getNumbers = () => {
-    let result = document.querySelector(".result")
-    result.innerHTML = ''
-    let symbolAct = '\+'
-    let number1 = parseInt(document.querySelector('#number1').value)
-    let number2 = parseInt(document.querySelector('#number2').value)
-    result.innerHTML = `Result is: ${number1} ${symbolAct} ${number2}`
+function getNum(identificator){
+    return  document.querySelector(identificator).value
 }
 
 const onSum = () => {
     let result = document.querySelector(".result")
     result.innerHTML = ''
-    let number1 = parseInt(document.querySelector('#number1').value)
-    let number2 = parseInt(document.querySelector('#number2').value)
+    let number1 = parseInt(getNum('#number1'))
+    let number2 = parseInt(getNum('#number2'))
     result.innerHTML = `Result is: ${number1 + number2}`
 }
 
 const onSubtract = () => {
     let result = document.querySelector(".result")
     result.innerHTML = ''
-    let number1 = parseInt(document.querySelector('#number1').value)
-    let number2 = parseInt(document.querySelector('#number2').value)
+    let number1 = parseInt(getNum('#number1'))
+    let number2 = parseInt(getNum('#number2'))
     result.innerHTML = `Result is: ${number1 - number2}`
 }
 function onDivide () {
     let result = document.querySelector(".result")
     result.innerHTML = ''
-    let number1 = parseInt(document.querySelector('#number1').value)
-    let number2 = parseInt(document.querySelector('#number2').value)
+    let number1 = parseInt(getNum('#number1'))
+    let number2 = parseInt(getNum('#number2'))
     result.innerHTML = `Result is: ${(number1 / number2).toFixed(2)}`
 }
 
