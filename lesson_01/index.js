@@ -53,6 +53,6 @@ function onTransform(){
     let val1 = document.querySelector('#val-task5-1').value
     let split = new String(val1).split("")
     result.innerHTML = split
-    }
+}
 
 
