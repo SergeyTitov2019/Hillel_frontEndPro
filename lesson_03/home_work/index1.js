@@ -15,5 +15,11 @@ for(let i = start; i <= end; i++){
         arrFraction.push(i+0.5)
     }
  }
-box.innerHTML = ([...arrWholeNum, ...arrFraction ].sort().toString().split(',').join(' '))
+// box.innerHTML = ([...arrWholeNum, ...arrFraction ].sort().toString().split(',').join(' '))
 
+let data = ''
+for(let i = start; i <= end; i +=0.5){
+    data += i + ' '
+}
+box.innerHTML = data
+// box.innerHTML
