@@ -145,8 +145,13 @@ classPractise07(555)
  *
  ************************************************************************************************************ */
 
-function classPractise08(num) {
-    let arr = [...num + '']
+function classPractise08(num, num2) {
+    let str = num.toString().split('').map(i => +i)
+    let str1 = num2.toString()
+    let arr = [...str, ...str1]
+
+    console.log('str:', str)
+
     let firstPart = parseInt(arr[0] + arr[1] + arr[2])
     let secondtPart = parseInt(arr[5] + arr[4] + arr[3])
     if(firstPart === secondtPart){
@@ -155,4 +160,17 @@ function classPractise08(num) {
         console.log('8:', 'Nope, the num can not be reflected')
     }
 }
-classPractise08(111111)
+classPractise08(125487, 555)
+
+
+// const arr555 = [25,25,88,89]
+// const ress = arr555.reduce((acc, cur) => acc = cur % 5 === 0 ? acc+ cur : acc, 0  )
+// const resss = arr555.reduce((acc, cur) => {
+//     if(cur % 5 === 0){
+//         return acc += cur
+//     } else {
+//         return acc
+//     }
+// }, 0 )
+//
+// console.log('res:', ress)

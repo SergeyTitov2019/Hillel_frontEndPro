@@ -11,18 +11,26 @@
 const num = Math.floor(prompt('Введите целое число', 10))
 const box = document.getElementById('box')
 let res = null
-
 const start = 1
 
-for(let i = start; i <= num; i++){
-    if(Math.pow(3, i) === num){
+for(let i = start; i <= num; i++) {
+    let powNum = Math.pow(3, i)
+    if(powNum > num){
+        break
+    } else if(powNum === num) {
         res = i
     }
 }
 
 if(res){
-    box.innerHTML = `Число <h5>${num}</h5> может быть получено путем возведения числа 3 в ${res}-ю степень.`
+    box.innerHTML = `
+            <div>Вы ввели число: <h6>${num}</h6> 
+            <div>Оно может быть получено путем возведения числа 3 в ${res}-ю степень.</div>
+        </div>`
 } else {
-    box.innerHTML = `Число <h5>${num}</h5> не может быть получено путем возведения числа 3 в степень.`
+    box.innerHTML = `
+            <div>Число: <h6>${num}</h6> 
+            <div>не может быть получено путем возведения числа 3 в степень.</div>
+        </div>`
 }
 
