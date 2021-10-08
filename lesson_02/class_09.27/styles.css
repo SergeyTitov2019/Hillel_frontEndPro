@@ -1,17 +1,26 @@
 h3{
     color: tomato;
 }
-button{
-    width: 100px;
-}
-.result, .equal_result, .calc_result{
-    margin: 15px 0 15px 0;
-    width: 500px;
-    height: 200px;
-    border: 1px solid #474141;
+
+#box{
+    border: 1px solid green;
     border-radius: 5px;
+    min-width: 600px;
+    max-width: fit-content;
+    min-height: 200px;
+    max-height: fit-content;
+    padding: 15px;
+}
+.arr-box{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
+}
+h6{
+    flex-grow: 1;
+}
+
+.arr-box h6 span{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 100;
+    width: 20px;
 }
