@@ -1,0 +1,35 @@
+h3{
+    color: tomato;
+}
+
+#box{
+    border: 2px solid #16c416;
+    border-radius: 5px;
+    min-width: 700px;
+    max-width: fit-content;
+    min-height: 100px;
+    max-height: fit-content;
+    padding: 15px;
+    margin: 15px;
+}
+.arr-box{
+    display: flex;
+}
+h6{
+    flex-grow: 1;
+}
+
+.arr-box h6 span{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 100;
+    width: 20px;
+}
+
+.box-content{
+    display: flex;
+    justify-content: flex-start;
+}
+.box-content h5{
+    flex-grow: 1;
+}
