@@ -1,0 +1,35 @@
+h3{
+    color: tomato;
+}
+
+#box{
+    border: 1px solid green;
+    border-radius: 5px;
+    min-width: 700px;
+    max-width: fit-content;
+    min-height: 200px;
+    max-height: fit-content;
+    padding: 15px;
+    margin: 15px 0;
+    position: relative;
+
+}
+
+.alert-box{
+    border: 1px solid #16216b;
+    border-radius: 5px;
+    min-width: 250px;
+    max-width: fit-content;
+    min-height: 100px;
+    max-height: fit-content;
+    padding: 15px;
+    margin: 15px 0;
+    position: absolute;
+    top: 74px;
+    left: 571px;
+    background-color: #e3ac69;
+}
+
+.disappear-class{
+    display: none;
+}

@@ -1,0 +1,49 @@
+h3{
+    color: tomato;
+}
+
+#box{
+    border: 1px solid green;
+    border-radius: 5px;
+    min-width: 700px;
+    max-width: fit-content;
+    min-height: 50px;
+    max-height: fit-content;
+    padding: 15px;
+    margin: 15px 0;
+}
+#box2{
+    border: 1px solid green;
+    border-radius: 5px;
+    min-width: 700px;
+    max-width: fit-content;
+    min-height: 50px;
+    max-height: fit-content;
+    padding: 15px;
+    margin: 15px 0;
+}
+.arr-box{
+    display: flex;
+}
+h6{
+    flex-grow: 1;
+}
+
+.arr-box h6 span{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 100;
+    width: 20px;
+}
+
+.input-group{
+    margin: 10px 0;
+}
+
+.box-content{
+    display: flex;
+    justify-content: flex-start;
+}
+.box-content h5{
+    flex-grow: 1;
+}

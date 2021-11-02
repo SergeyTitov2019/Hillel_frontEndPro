@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hillel</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <h3>Hillel Lesson 5</h3>
+    <h4>Вариант 1</h4>
+    <hr>
+    <form action="" class="form">
+        <select class="form-select" id="select" aria-label="Default select example">
+            <option selected>Выберите категорию товара</option>
+            <option value="1">Телефоны</option>
+            <option value="2">Ноутбуки</option>
+            <option value="3">Аксуссуары</option>
+        </select>
+
+        <div class="input-group">
+            <input id="input1" type="number" class="form-control" placeholder="Выберите товар. Введите цифру )))" aria-label="R">
+        </div>
+        <div class="input-group">
+            <input id="input2" type="number" class="form-control" placeholder="Выберите количество товара" aria-label="R">
+        </div>
+        <button class="btn btn-outline-primary" type="button" id="btn-form"> Добавить в корзину </button>
+    </form>
+
+    <div class="box" id="box"></div>
+</div>
+    <script src="js/data.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
