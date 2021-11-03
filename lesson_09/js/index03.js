@@ -17,3 +17,4 @@ function addElement() {
     my_div = document.getElementById("org_div1");
     document.body.insertBefore(newDiv, my_div);
 }
+addElement()
