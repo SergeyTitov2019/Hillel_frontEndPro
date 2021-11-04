@@ -33,3 +33,51 @@ h3{
 .disappear-class{
     display: none;
 }
+.table-elem{
+    border: 1px solid red;
+    min-height: 25px;
+    height: fit-content;
+    min-width: 100px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white{
+    background-color: #e3ac69;
+    width: 25px;
+    height: 25px;
+}
+.black{
+    background-color: #1a1003;
+    width: 25px;
+    height: 25px;
+}
+.form{
+    background-color: #e3ac69;
+    border: 1px solid #fdf8f8;
+    border-radius: 7px;
+    width: 55px;
+    height: 55px;
+}
+
+td{
+    text-align: center;
+}
+.image{
+    max-height: 150px;
+    max-height: 150px;
+}
+#btn-container-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn-container-5 div img{
+    padding: 10px;
+    max-width: 100px;
+}
+#btn-container-5 div img{
+   cursor: pointer;
+}

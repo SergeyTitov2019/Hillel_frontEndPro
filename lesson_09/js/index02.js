@@ -13,6 +13,8 @@ const btnAddLink = document.getElementById('btn-container').getElementsByTagName
 const goToLink = document.getElementById('btn-container').getElementsByTagName('button')[1]
 let link = ''
 
+console.log(btnAddLink)
+
 function showTask() {
     document.getElementById('btn-container').classList.remove('disappear-class')
 }

@@ -6,15 +6,23 @@
  **/
 
 const box = document.getElementById('box')
-let my_div = newDiv = null;
 
-function addElement() {
-    let newDiv = document.createElement("div");
-    newDiv.innerHTML = "<h1>Привет!</h1>";
+function tableChess() {
+    let num = 0
+    let table = document.createElement("table");
+    for (let i = 1; i < 11; i++) {
+        let tr = document.createElement('tr');
+        for (let j = 1; j < 11; j++) {
+            let td = document.createElement('td');
+            num ++
+            td.className = "form"
+            td.innerText = num
+            tr.appendChild(td);
+        }
+        table.appendChild(tr);
+    }
+    box.appendChild(table);
 
-    // Добавляем только что созданный элемент в дерево DOM
-
-    my_div = document.getElementById("org_div1");
-    document.body.insertBefore(newDiv, my_div);
 }
-addElement()
+
+tableChess()
