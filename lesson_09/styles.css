@@ -81,3 +81,14 @@ td{
 #btn-container-5 div img{
    cursor: pointer;
 }
+
+#btn-container-5 p{
+    height: 35px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #d0e0d0;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

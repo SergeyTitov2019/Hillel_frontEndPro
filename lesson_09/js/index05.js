@@ -13,7 +13,7 @@
 const box = document.getElementById('box')
 const imgElem = document.getElementById('btn-container-5').getElementsByTagName('div')
 console.log(imgElem)
-let num = 0
+
 
 
 function showTask() {
@@ -23,25 +23,14 @@ function showTask() {
 function addP(){
     for (let i = 0; i < imgElem.length; i++) {
         let p = document.createElement('p');
-        p.innerHTML =  ` <p>${ num }</p>`
+        let num = 1
         imgElem[i].appendChild(p)
-    }
-    clickVote()
-
-}
-
-function inc(){
-    num ++
-   console.log(num)
-}
-
-function clickVote(){
-    for (let i = 0; i < imgElem.length; i++) {
-       imgElem[i].addEventListener('click', e => inc())
+        imgElem[i].addEventListener('click', e => {
+            p.innerHTML =  ` ${ num }`
+            num++
+        })
     }
 }
-
 
 showTask()
 addP()
-// clickVote()
