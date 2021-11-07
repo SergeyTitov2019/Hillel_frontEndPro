@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    margin: 30px;
+}
+.note{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #c78181;
+    border-radius: 5px;
+    background-color: #807c7f;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.note button{
+    margin-top: 15px;
+    width: 120px;
+}
+
+.category {
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid #eeefee;
+    border-radius: 4px;
+    padding: 0px 8px;
+    min-width: 150px;
+    margin-bottom: 5px;
+}
+.category:hover {
+    background-color: #81a0d7;
+
+}
+
+.product {
+    border: 1px solid #eeefee;
+    border-radius: 4px;
+    background-color: #81a0d7;
+    padding: 0px 8px;
+    min-width: 150px;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+}
+
+.product:hover {
+    background-color: #dde5f3;
+
+}
+
+.info{
+    max-width: 200px;
+    font-size: 13px;
+    margin: 5px;
+    margin-left: 30px;
+    border: 1px solid #eeefee;
+    border-radius: 4px;
+    padding: 8px;
+
+}
+
+.info-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-width: 200px;
+    font-size: 15px;
+    margin-left: 30px;
+    border: 1px solid #cd73d7;
+    border-radius: 4px;
+    background-color: #e8cae1;
+    padding: 0px 8px;
+}
+.info-block div{
+    text-align: end;
+}
+
+.info-block button{
+    width: 100px;
+    align-self: center;
+    margin: 10px;
+}
+
+.invisible{
+    display: none;
+}
